@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
         flexDirection:"row",
         alignItems:"center",
         justifyContent:"center",
+        zIndex:1
     },
     image:{
         width:"100%",
@@ -119,14 +120,149 @@ const styles = StyleSheet.create({
         alignSelf:"center",
         justifyContent:"flex-start",
         backgroundColor:"black",
-        zIndex:2
+        zIndex:3
     },
     overlay:{
         width:"100%",
         height:"100%",
         backgroundColor:"rgba(0,0,0,0.6)",
         position:"absolute",
-        zIndex:1,
+        zIndex:2,
+    },
+    buyBtn:{
+        color:"white",
+        fontSize:28,
+        textAlign:"center",
+        marginTop:35,
+        fontWeight:"bold",
+        letterSpacing:1
+    },
+    setSize:{
+        flexDirection:"row",
+        width:width * 0.8,
+        justifyContent:"space-between",
+        alignItems:"center",
+        borderColor:"grey",
+        borderWidth:1,
+        height:35,
+        marginTop:20
+    },
+    scroll:{
+        width:width*0.2,
+        height:5,
+        backgroundColor:"black",
+        alignSelf:"center",
+        marginTop:5
+    },
+    quantity:{
+        flexDirection:"row",
+        alignItems:"center",
+        justifyContent:"space-between",
+        width:"85%"
+    },
+    color:{
+        fontSize:18,
+        color:"black",
+
+    },
+    countContainer:{
+        flexDirection:"row",
+        alignItems:"center",
+        justifyContent:"space-evenly",
+        width:"40%"
+    },
+    decrease:{
+        width:35,
+        height:35,
+        textAlign:"center",
+        fontSize:22,
+        fontWeight:"700",
+        color:"black",
+        borderRadius:5,
+        borderWidth:1,
+        borderColor:"grey",
+        alignItems:"center",
+        justifyContent:"center",
+        marginRight:5
+
+    },
+    itemCount:{
+        fontSize:22,
+        color:"black",
+        marginHorizontal:5
+
+    },
+    row2:{
+        flexDirection:"row",
+        alignItems:"center",
+        justifyContent:"space-between",
+        width:width*0.8,
+        marginVertical:10 
+    },
+    add:{
+        width:35,
+        height:35,
+        textAlign:"center",
+        fontSize:22,
+        fontWeight:"700",
+        color:"black",
+        borderRadius:5,
+        borderWidth:1,
+        borderColor:"grey",
+        alignItems:"center",
+        justifyContent:"center",
+        marginLeft:5
+    },
+    hr:{
+        width:width * 0.9,
+        height:3,
+        backgroundColor:"black",
+        marginTop:10,
+        marginBottom:10,
+
+    },
+    totalPrice:{
+        color:"grey",
+        fontSize:22,
+        alignSelf:"flex-end",
+        marginBottom:15
+    },
+    ButtonContainer:{
+        width:width*0.87,
+        alignSelf:"center",
+        flexDirection:"row",
+        alignItems:"center",
+        justifyContent:"center",
+        height:45,
+        borderColor:"grey",
+        borderWidth:1,
+        borderRadius:5,
+        marginBottom:5
+
+    },
+    Button1:{
+        width:"50%",
+        height:"100%",
+        backgroundColor:"white",
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    Button1Text:{
+        color:"black",
+        fontSize:18,
+        fontWeight:"bold"
+    },
+    Button2:{
+        width:"50%",
+        height:"100%",
+        backgroundColor:"black",
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    Button2Text:{
+        color:"white",
+        fontSize:18,
+        fontWeight:"bold"
     }
 })
 
